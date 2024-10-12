@@ -1,0 +1,26 @@
+version: 2
+models:
+  - name: enterprise
+    description: bevat 1 lijn per entiteit met enkele basisgegevens.
+    columns:
+      - name: EnterpriseNumber
+        description: ''
+        data_type: VARCHAR
+      - name: Status
+        description: ''
+        data_type: VARCHAR
+      - name: JuridicalSituation
+        description: ''
+        data_type: VARCHAR
+      - name: TypeOfEnterprise
+        description: ''
+        data_type: BIGINT
+      - name: JuridicalForm
+        description: ''
+        data_type: VARCHAR
+      - name: JuridicalFormCAC
+        description: ''
+        data_type: VARCHAR
+      - name: StartDate
+        description: ''
+        data_type: DATE

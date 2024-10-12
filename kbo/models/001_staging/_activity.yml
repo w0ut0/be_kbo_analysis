@@ -1,0 +1,27 @@
+version: 2
+models:
+  - name: activity
+    description: "Bevat 1 lijn per activiteit van een entiteit of vestigingseenheid. Een entiteit of vestigingseenheid kan meerdere activiteiten uitoefenen"
+    columns:
+      - name: EntityNumber
+        description: 'Het vestigingseenheids- of ondernemingsnummer.'
+        data_type: VARCHAR
+      - name: ActivityGroup
+        description: 'Soort activiteit. Zie codetabel'
+        data_type: VARCHAR
+      - name: NaceVersion
+        description: 'Geeft aan of de activiteit is gecodeerd in Nace versie 2003 of Nace versie 2008.'
+        data_type: BIGINT
+        tests:
+          - accepted_values:
+              values: ['2003', '2008']
+      - name: NaceCode
+        description: 'De activiteit van de entiteit of vestigingseenheid, gecodeerd in een Nace code (in de aangegeven versie). Zie codetabel (Nace2003, Nace2008).'
+        data_type: VARCHAR
+        tests:
+          - relationships:
+              to: ref('code')
+              field: Code
+      - name: Classification
+        description: 'Geeft aan of dit een hoofd-, neven- of hulpactiviteit is. Zie codetabel.'
+        data_type: VARCHAR

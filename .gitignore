@@ -1,0 +1,5 @@
+*.zip.venv
+*.duckdb
+*.csv
+*.zip
+.venv

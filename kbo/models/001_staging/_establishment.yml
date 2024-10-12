@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: establishment
+    description: bevat 1 lijn per vestigingseenheid met enkele basisgegevens
+    columns:
+      - name: EstablishmentNumber
+        description: ''
+        data_type: VARCHAR
+      - name: StartDate
+        description: ''
+        data_type: DATE
+      - name: EnterpriseNumber
+        description: ''
+        data_type: VARCHAR

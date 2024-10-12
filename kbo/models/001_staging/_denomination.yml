@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: denomination
+    description: "bevat 1 lijn per naam van een entiteit, vestigingseenheid of bijkantoor. Een entiteit heeft steeds een naam. Daarnaast kunnen ook een commerciële naam en/of afkorting voorkomen. Cookbook KBO Open Data - versie R011.00 7/17Een vestigingseenheid heeft soms een commerciële naam. Een bijkantoor kan een naam van het bijkantoor en/of een afkorting hebben"
+    columns:
+      - name: EntityNumber
+        description: ''
+        data_type: VARCHAR
+      - name: Language
+        description: ''
+        data_type: BIGINT
+      - name: TypeOfDenomination
+        description: ''
+        data_type: VARCHAR
+      - name: Denomination
+        description: ''
+        data_type: VARCHAR

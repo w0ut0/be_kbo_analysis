@@ -1,0 +1,14 @@
+version: 2
+models:
+  - name: branch
+    description: "één lijn per bijkantoor is gelinkt aan een buitenlandse entiteit. Opgelet, het ID van een bijkantoor is geen officieel nummer. Dit nummer kan nooit gebruikt worden voor een opzoeking in andere public search producten."
+    columns:
+      - name: Id
+        description: ''
+        data_type: VARCHAR
+      - name: StartDate
+        description: ''
+        data_type: DATE
+      - name: EnterpriseNumber
+        description: ''
+        data_type: VARCHAR

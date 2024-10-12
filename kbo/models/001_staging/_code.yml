@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: code
+    description: "Bevat de beschrijvingen van de codes die gebruikt worden in de andere bestanden"
+    columns:
+      - name: Category
+        description: ''
+        data_type: VARCHAR
+      - name: Code
+        description: ''
+        data_type: VARCHAR
+      - name: Language
+        description: ''
+        data_type: VARCHAR
+      - name: Description
+        description: ''
+        data_type: VARCHAR

@@ -1,0 +1,11 @@
+version: 2
+models:
+  - name: meta
+    description: Bevat enkele metagegevens over dit full bestand
+    columns:
+      - name: Variable
+        description: ''
+        data_type: VARCHAR
+      - name: Value
+        description: ''
+        data_type: VARCHAR

@@ -1,0 +1,17 @@
+version: 2
+models:
+  - name: contact
+    description: "bevat contactgegevens van entiteiten en vestigingseenheden"
+    columns:
+      - name: EntityNumber
+        description: ''
+        data_type: VARCHAR
+      - name: EntityContact
+        description: ''
+        data_type: VARCHAR
+      - name: ContactType
+        description: ''
+        data_type: VARCHAR
+      - name: Value
+        description: ''
+        data_type: VARCHAR

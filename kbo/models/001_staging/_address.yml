@@ -1,0 +1,44 @@
+version: 2
+models:
+  - name: address
+    description: "Bevat 0, 1 of 2 lijnen per adres van een entiteit of vestigingseenheid. Voor een geregistreerde entiteit rechtspersoon geven we het adres van de zetel, én – indien van toepassing – het adres van het bijkantoor. Voor een geregistreerde entiteit natuurlijk persoon wordt geen  enkel adres gegeven op het niveau van de zetel. Enkel het (de) adres(sen) van de vestigingseenhe(i)d(en) worden gegeven"
+    columns:
+      - name: EntityNumber
+        description: ''
+        data_type: VARCHAR
+      - name: TypeOfAddress
+        description: ''
+        data_type: VARCHAR
+      - name: CountryNL
+        description: ''
+        data_type: VARCHAR
+      - name: CountryFR
+        description: ''
+        data_type: VARCHAR
+      - name: Zipcode
+        description: ''
+        data_type: VARCHAR
+      - name: MunicipalityNL
+        description: ''
+        data_type: VARCHAR
+      - name: MunicipalityFR
+        description: ''
+        data_type: VARCHAR
+      - name: StreetNL
+        description: ''
+        data_type: VARCHAR
+      - name: StreetFR
+        description: ''
+        data_type: VARCHAR
+      - name: HouseNumber
+        description: ''
+        data_type: VARCHAR
+      - name: Box
+        description: ''
+        data_type: VARCHAR
+      - name: ExtraAddressInfo
+        description: ''
+        data_type: VARCHAR
+      - name: DateStrikingOff
+        description: ''
+        data_type: DATE
